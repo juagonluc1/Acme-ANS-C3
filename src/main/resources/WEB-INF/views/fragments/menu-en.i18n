@@ -1,0 +1,72 @@
+# menu-en.i18n
+#
+# Copyright (C) 2012-2025 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+# master.menu.anonymous #######################################################
+
+master.menu.anonymous = Anonymous
+master.menu.anonymous.favourite-link = Favourite link
+
+# master.menu.administrator ###################################################
+
+master.menu.administrator = Administrator
+master.menu.administrator.list-airlines = Airlines list
+master.menu.administrator.list-airports = Airports list
+master.menu.administrator.list-user-accounts = List user accounts
+master.menu.administrator.populate-db-initial = Populate DB (initial)
+master.menu.administrator.populate-db-sample = Populate DB (samples)
+master.menu.administrator.shut-system-down = Shut system down
+
+# master.menu.provider ########################################################
+
+master.menu.provider = Provider
+master.menu.provider.favourite-link = Favourite link
+
+# master.menu.consumer ##########################################################
+
+master.menu.consumer = Consumer
+master.menu.consumer.favourite-link = Favourite link
+
+# master.menu.user-account ####################################################
+
+master.menu.user-account = Account
+master.menu.user-account.general-profile = General profile
+master.menu.user-account.become-provider = Become a provider
+master.menu.user-account.provider-profile = Provider profile
+master.menu.user-account.become-consumer = Become a consumer
+master.menu.user-account.consumer-profile = Consumer profile
+master.menu.user-account.become-manager = Become an airline manager
+master.menu.user-account.consumer-manager = Airline manager profile
+master.menu.user-account.become-member = Become a flight crew member
+master.menu.user-account.member-profile = Flight crew member
+
+master.menu.airline-manager = Airline Manager
+master.menu.airline-manager.flight.list = Flights
+master.menu.airline-manager.dashboard = Dashboard
+
+master.menu.flight-crew-member = Flight crew member
+master.menu.flight-crew-member.flight-assignment.list.completed = List of completed flights
+master.menu.flight-crew-member.flight-assignment.list.not-completed = List of not-completed flights
+
+master.menu.assistance-agent = Assistance Agent
+master.menu.airline-manager.flight.list = Flights
+master.menu.assistance-agent.claim.list = Claim list
+master.menu.assistance-agent.claim.listCompleted = Completed Claim list
+master.menu.assistance-agent.claim.listPending = Pending Claim list
+
+# master.menu.customer ##########################################################
+master.menu.customer = Customer
+master.menu.customer.booking.list = Bookings
+master.menu.customer.passenger.list = Passengers
+master.menu.customer.booking-record.list = Passengers Bookings
+
+master.menu.any = Any
+master.menu.any.flights = Flights
+master.menu.any.flight-assignment = Flights assignments
+master.menu.dashboards.flight-crew-member-dashboard = Flight crew member dashboard

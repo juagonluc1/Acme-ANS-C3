@@ -1,0 +1,14 @@
+flight-crew-member.activity-log.form.title = Activity log
+
+flight-crew-member.activity-log.form.label.moment = Moment
+flight-crew-member.activity-log.form.label.type = Type
+flight-crew-member.activity-log.form.label.description = Description
+flight-crew-member.activity-log.form.label.severityLevel = Severity level
+
+flight-crew-member.activity-log.form.button.update = Update
+flight-crew-member.activity-log.form.button.delete = Delete
+flight-crew-member.activity-log.form.button.publish = Publish
+flight-crew-member.activity-log.form.button.create = Create
+
+acme.validation.activityLog.moment = The moment is incorrect
+acme.validation.activityLog.flightCrewMember.momentNull = Moment is null
