@@ -38,11 +38,12 @@ public class FlightCrewMemberVisaRequirementsListService extends AbstractGuiServ
 	public void unbind(final VisaRequirements object) {
 		assert object != null;
 
-		Dataset dataset = super.unbindObject(object, "passportName", "destinationName", "assignment");
+		Dataset dataset = super.unbindObject(object, "passportName", "destinationName", "assignment", "nameCategory", "duration");
 		dataset.put("passportName", object.getAssignment().getLeg().getDepartureAirport().getCountry());
 		dataset.put("destinationName", object.getAssignment().getLeg().getArrivalAirport().getCountry());
 		dataset.put("assignment", object.getAssignment().getId());
-
+		dataset.put("nameCategory", object.getNameCategory());
+		dataset.put("duration", object.getDuration());
 		super.getResponse().addData(dataset);
 	}
 

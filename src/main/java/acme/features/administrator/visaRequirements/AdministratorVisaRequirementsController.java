@@ -16,10 +16,8 @@ public class AdministratorVisaRequirementsController extends AbstractGuiControll
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AdministratorVisaRequirementsListService	listService;
-
-	@Autowired
-	private AdministratorVisaRequirementsUpdateService	updateService;
+	private AdministratorVisaRequirementsListService listService;
+	//private AdministratorVisaRequirementsShowService showService;
 
 	// Constructors -----------------------------------------------------------
 
@@ -27,7 +25,6 @@ public class AdministratorVisaRequirementsController extends AbstractGuiControll
 	@PostConstruct
 	protected void initialise() {
 		super.addBasicCommand("list", this.listService);
-		super.addBasicCommand("update", this.updateService);
+		//super.addBasicCommand("show", this.showService);
 	}
-
 }

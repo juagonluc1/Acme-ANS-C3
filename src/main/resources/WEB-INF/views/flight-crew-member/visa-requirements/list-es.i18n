@@ -1,0 +1,10 @@
+flight-crew-member.visa-requirements.list.title = Popular Visa
+
+flight-crew-member.visa-requirements.form.label.passportName = Origen
+flight-crew-member.visa-requirements.form.label.destinationName = Destino
+flight-crew-member.visa-requirements.form.label.assignment = Asignación Id
+flight-crew-member.visa-requirements.form.label.nameCategory = Categoria
+flight-crew-member.visa-requirements.form.label.duration = Duración
+
+flight-crew-member.visa-requirements.error.remote = Error remoto
+flight-crew-member.visa-requirements.error.unexpected = Error no esperado

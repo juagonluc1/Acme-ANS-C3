@@ -1,21 +1,21 @@
 
-package acme.features.flightCrewMember.visaRequirements;
+package acme.features.administrator.visaRequirements;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
 import acme.client.components.models.Dataset;
+import acme.client.components.principals.Administrator;
 import acme.client.services.AbstractGuiService;
 import acme.client.services.GuiService;
 import acme.entities.visaRequirements.VisaRequirements;
-import acme.realms.FlightCrewMember;
 
 @GuiService
-public class FlightCrewMemberVisaRequirementsShowService extends AbstractGuiService<FlightCrewMember, VisaRequirements> {
+public class AdministratorVisaRequirementsShowService extends AbstractGuiService<Administrator, VisaRequirements> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private FlightCrewMemberVisaRequirementsRepository repository;
+	private AdministratorVisaRequirementsRepository repository;
 
 	// AbstractGuiService interface -------------------------------------------
 
@@ -23,7 +23,7 @@ public class FlightCrewMemberVisaRequirementsShowService extends AbstractGuiServ
 	@Override
 	public void authorise() {
 		boolean status;
-		status = super.getRequest().getPrincipal().hasRealmOfType(FlightCrewMember.class);
+		status = super.getRequest().getPrincipal().hasRealmOfType(Administrator.class);
 		super.getResponse().setAuthorised(status);
 	}
 
@@ -32,7 +32,7 @@ public class FlightCrewMemberVisaRequirementsShowService extends AbstractGuiServ
 		int assignmentId = super.getRequest().getData("id", int.class); // viene del list
 		VisaRequirements vr = this.repository.findById(assignmentId);
 
-		super.state(vr != null, "*", "flight-crew-member.visa-requirements.error.not-found");
+		super.state(vr != null, "*", "administrator.visa-requirements.error.not-found");
 		if (vr != null)
 			super.getBuffer().addData(vr);
 	}

@@ -1,0 +1,10 @@
+administrator.visa-requirements.list.title = Populate Visa Requirements
+
+administrator.visa-requirements.form.label.passportName = origin
+adminisitrator.visa-requirements.form.label.destinationName = destination
+adminisitrator.visa-requirements.form.label.assignment = assignment Id
+adminisitrator.visa-requirements.form.label.nameCategory = category
+adminisitrator.visa-requirements.form.label.duration = duration
+
+administrator.visa-requirements.error.remote = remote error
+administrator.visa-requirements.error.unexpected = unexpected error

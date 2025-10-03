@@ -22,4 +22,6 @@ public interface FlightCrewMemberVisaRequirementsRepository extends AbstractRepo
 	@Query("select distinct fa.leg.departureAirport.country, fa.leg.arrivalAirport.country from FlightAssignment fa where fa.member.id = :id")
 	Collection<String[]> findAirportsLegByMemberId(int id);
 
+	@Query("select v from VisaRequirements v where v.id = :id")
+	VisaRequirements findById(int id);
 }

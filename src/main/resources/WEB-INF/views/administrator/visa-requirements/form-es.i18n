@@ -1,0 +1,10 @@
+administrator.visa-requirements.error.remote = Error remoto
+administrator.visa-requirements.error.unexpected = Error
+administrator.visa-requirements.error.not-found = Elemento no encontrado
+
+administrator.visa-requirements.form.title = Requisitos Visa
+administrator.visa-requirements.form.label.passportName = Origen
+administrator.visa-requirements.form.label.destinationName = Destino
+administrator.visa-requirements.form.label.nameCategory = Categoria
+administrator.visa-requirements.form.label.duration = Duracion
+administrator.visa-requirements.form.label.lastUpdate = Ultima actualización

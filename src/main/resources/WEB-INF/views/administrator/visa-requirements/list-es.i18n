@@ -1,0 +1,10 @@
+administrator.visa-requirements.list.title = Popular Visa
+
+administrator.visa-requirements.form.label.passportName = Origen
+adminisitrator.visa-requirements.form.label.destinationName = Destino
+adminisitrator.visa-requirements.form.label.assignment = Asignación Id
+adminisitrator.visa-requirements.form.label.nameCategory = Categoria
+adminisitrator.visa-requirements.form.label.duration = Duración
+
+administrator.visa-requirements.error.remote = Error remoto
+administrator.visa-requirements.error.unexpected = Error no esperado

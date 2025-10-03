@@ -6,7 +6,7 @@
 <acme:list>
 		<acme:list-column code="flight-crew-member.visa-requirements.form.label.passportName" path="passportName" width="20%" sortable="true"/>
 		<acme:list-column code="flight-crew-member.visa-requirements.form.label.destinationName" path="destinationName" width="20%" sortable="true"/>
-		<acme:list-column code="flight-crew-member.visa-requirements.form.label.assignmentId" path="assignmentId" width="20%" sortable="true"/>
-		
-		
+		<acme:list-column code="flight-crew-member.visa-requirements.form.label.assignment" path="assignment" width="20%" sortable="true"/>
+		<acme:list-column code="flight-crew-member.visa-requirements.form.label.nameCategory" path="nameCategory" width="20%" sortable="true"/>
+		<acme:list-column code="flight-crew-member.visa-requirements.form.label.duration" path="duration" width="20%" sortable="true"/>	
 </acme:list>

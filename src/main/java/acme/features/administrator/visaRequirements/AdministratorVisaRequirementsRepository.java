@@ -23,4 +23,7 @@ public interface AdministratorVisaRequirementsRepository extends AbstractReposit
 	@Modifying(clearAutomatically = true, flushAutomatically = true)
 	@Query("delete from VisaRequirements v where v.assignment = :assignment")
 	void deleteByAssignment(FlightAssignment assignment);
+
+	@Query("select v from VisaRequirements v where v.id = :id")
+	VisaRequirements findById(int id);
 }

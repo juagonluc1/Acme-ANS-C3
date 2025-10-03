@@ -21,6 +21,7 @@ master.menu.administrator.list-user-accounts = Ver cuentas de usuario
 master.menu.administrator.populate-db-initial = Poblar BD (inicial)
 master.menu.administrator.populate-db-sample = Poblar BD (ejemplos)
 master.menu.administrator.shut-system-down = Parar el sistema
+master.menu.administrator.list-visa = Popular visa
 
 # master.menu.provider ########################################################
 
@@ -53,6 +54,7 @@ master.menu.airline-manager.flight.list = Vuelos
 master.menu.flight-crew-member = Miembro de la tripulación de vuelo 
 master.menu.flight-crew-member.flight-assignment.list.completed = Lista de vuelos completados
 master.menu.flight-crew-member.flight-assignment.list.not-completed = Lista de vuelos no completados
+master.menu.flight-crew-member.visa-requirements = Requisitos Visa
 
 master.menu.assistance-agent.claim.list = Lista de reclamaciones
 master.menu.assistance-agent.claim.listCompleted = Lista de reclamaciones completas
