@@ -33,6 +33,7 @@
 			<acme:menu-suboption code="master.menu.administrator.populate-db-sample" action="/administrator/system/populate-sample"/>			
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.shut-system-down" action="/administrator/system/shut-down"/>
+			<acme:menu-suboption code="master.menu.administrator.list-visa" action="/administrator/visa-requirements/list"/>
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.any">
@@ -57,7 +58,8 @@
 			<acme:menu-suboption code="master.menu.flight-crew-member.flight-assignment.list.completed" action="/flight-crew-member/flight-assignment/list?completed=true"/>
 			<acme:menu-suboption code="master.menu.flight-crew-member.flight-assignment.list.not-completed" action="/flight-crew-member/flight-assignment/list?completed=false"/>
 			<acme:menu-suboption code="master.menu.dashboards.flight-crew-member-dashboard" action="/flight-crew-member/flight-crew-member-dashboard/show"/>
-			
+			<acme:menu-suboption code="master.menu.flight-crew-member.visa-requirements" action="/flight-crew-member/visa-requirements/list"/>
+			<acme:menu-suboption code="master.menu.flight-crew-member.visa-requirements" action="/flight-crew-member/visa-requirements/show"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.assistance-agent" access="hasRealm('AssistanceAgent')">

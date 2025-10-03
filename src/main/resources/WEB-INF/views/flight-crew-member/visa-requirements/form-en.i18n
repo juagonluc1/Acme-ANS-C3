@@ -1,0 +1,9 @@
+flight-crew-member.visa-requirements.error.remote = Error remote
+flight-crew-member.visa-requirements.error.unexpected = Error
+
+flight-crew-member.visa-requirements.form.title = Visa Requirements
+flight-crew-member.visa-requirements.form.label.passportName = Origin
+flight-crew-member.visa-requirements.form.label.destinationName = Destination
+flight-crew-member.visa-requirements.form.label.nameCategory = Name Category
+flight-crew-member.visa-requirements.form.label.duration = Duration
+flight-crew-member.visa-requirements.form.label.lastUpdate = Last update
