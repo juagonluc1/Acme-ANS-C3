@@ -4,6 +4,7 @@ package acme.entities.flightAssignment;
 import java.util.Date;
 
 import javax.persistence.Entity;
+import javax.persistence.Enumerated;
 import javax.persistence.Index;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
@@ -48,7 +49,7 @@ public class FlightAssignment extends AbstractEntity {
 	private Date				lastUpdate;
 
 	@Mandatory
-	@Valid
+	@Enumerated
 	@Automapped
 	private StatusAssignment	status;
 

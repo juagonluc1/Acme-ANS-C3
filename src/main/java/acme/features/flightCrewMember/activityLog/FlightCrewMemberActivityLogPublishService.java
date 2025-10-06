@@ -80,7 +80,7 @@ public class FlightCrewMemberActivityLogPublishService extends AbstractGuiServic
 
 		Dataset dataset;
 
-		dataset = super.unbindObject(object, "moment", "logType", "description", "severityLevel", "draftMode");
+		dataset = super.unbindObject(object, "moment", "logType", "description", "severityLevel", "draftMode", "assignment");
 		super.getResponse().addData(dataset);
 
 	}

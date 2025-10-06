@@ -4,11 +4,11 @@ package acme.features.flightCrewMember.activityLog;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import acme.client.components.models.Dataset;
-import acme.client.helpers.MomentHelper;
 import acme.client.helpers.PrincipalHelper;
 import acme.client.services.AbstractGuiService;
 import acme.client.services.GuiService;
 import acme.entities.activityLog.ActivityLog;
+import acme.entities.flightAssignment.FlightAssignment;
 import acme.realms.FlightCrewMember;
 
 @GuiService
@@ -24,11 +24,15 @@ public class FlightCrewMemberActivityLogUpdateService extends AbstractGuiService
 
 	@Override
 	public void authorise() {
-		boolean status;
+		boolean status = false;
 		int activityLogId = super.getRequest().getData("id", int.class);
 		ActivityLog activityLog = this.repository.findActivityLogById(activityLogId);
-		status = activityLog != null && activityLog.isDraftMode() && activityLog.getAssignment().getMember().getId() == super.getRequest().getPrincipal().getActiveRealm().getId();
+		if (activityLog != null) {
+			FlightAssignment flightAssignment = activityLog.getAssignment();
+			FlightCrewMember member = (FlightCrewMember) super.getRequest().getPrincipal().getActiveRealm();
 
+			status = activityLog != null && activityLog.isDraftMode() && activityLog.getAssignment().getMember().getId() == super.getRequest().getPrincipal().getActiveRealm().getId() && !flightAssignment.isDraftMode();
+		}
 		super.getResponse().setAuthorised(status);
 	}
 
@@ -47,7 +51,7 @@ public class FlightCrewMemberActivityLogUpdateService extends AbstractGuiService
 	public void bind(final ActivityLog object) {
 		assert object != null;
 
-		super.bindObject(object, "moment", "logType", "description", "severityLevel");
+		super.bindObject(object, "logType", "description", "severityLevel");
 	}
 
 	@Override
@@ -74,7 +78,6 @@ public class FlightCrewMemberActivityLogUpdateService extends AbstractGuiService
 
 	@Override
 	public void perform(final ActivityLog object) {
-		object.setMoment(MomentHelper.getCurrentMoment());
 		this.repository.save(object);
 	}
 
@@ -89,7 +92,7 @@ public class FlightCrewMemberActivityLogUpdateService extends AbstractGuiService
 
 		Dataset dataset;
 
-		dataset = super.unbindObject(object, "moment", "logType", "description", "severityLevel", "draftMode");
+		dataset = super.unbindObject(object, "moment", "logType", "description", "severityLevel", "draftMode", "assignment");
 		super.getResponse().addData(dataset);
 	}
 

@@ -62,4 +62,11 @@ public class FlightCrewMemberActivityLogListService extends AbstractGuiService<F
 		super.getResponse().addData(dataset);
 	}
 
+	@Override
+	public void unbind(final Collection<ActivityLog> object) {
+		int flightAssignmentId;
+		flightAssignmentId = super.getRequest().getData("assignment", int.class);
+		super.getResponse().addGlobal("assignment", flightAssignmentId);
+	}
+
 }
