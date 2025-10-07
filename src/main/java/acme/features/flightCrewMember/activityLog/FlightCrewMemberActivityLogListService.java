@@ -28,11 +28,9 @@ public class FlightCrewMemberActivityLogListService extends AbstractGuiService<F
 		boolean status;
 
 		int flightAssignmentId = super.getRequest().getData("masterId", int.class);
-		System.out.println("9");
 
 		FlightAssignment flightAssignment = this.repository.findFlightAssignmentById(flightAssignmentId);
 		status = flightAssignment != null && flightAssignment.getMember().getId() == super.getRequest().getPrincipal().getActiveRealm().getId() && !flightAssignment.isDraftMode();
-		System.out.println("10");
 
 		super.getResponse().setAuthorised(status);
 	}
@@ -40,19 +38,14 @@ public class FlightCrewMemberActivityLogListService extends AbstractGuiService<F
 	@Override
 	public void load() {
 		Collection<ActivityLog> objects;
-		System.out.println("1");
 		int flightAssignmentId = super.getRequest().getData("masterId", int.class);
-		System.out.println("2");
 
 		FlightAssignment flightAssignment = this.repository.findFlightAssignmentById(flightAssignmentId);
 		super.getResponse().addGlobal("masterId", flightAssignmentId);
-		System.out.println("3");
 
 		objects = this.repository.findActivityLogsByFlightAssignmentId(flightAssignmentId);
-		System.out.println("4");
 
 		super.getResponse().addGlobal("masterDraftMode", flightAssignment.isDraftMode());
-		System.out.println("5");
 
 		super.getBuffer().addData(objects);
 	}
@@ -62,19 +55,14 @@ public class FlightCrewMemberActivityLogListService extends AbstractGuiService<F
 		assert object != null;
 
 		Dataset dataset;
-		System.out.println("6");
-
 		dataset = super.unbindObject(object, "moment", "logType", "description", "severityLevel", "draftMode");
-		System.out.println("7");
 
 		if (object.isDraftMode())
 			dataset.put("draftMode", "✓");
 		else
 			dataset.put("draftMode", "✗");
-		System.out.println("8");
 
 		super.getResponse().addData(dataset);
-		System.out.println("11");
 
 	}
 

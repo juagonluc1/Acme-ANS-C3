@@ -53,7 +53,6 @@ public class FlightCrewMemberAssignmentFlightPublishService extends AbstractGuiS
 		FlightAssignment flightAssignment;
 		flightAssignment = new FlightAssignment();
 		int flightAssignmentId;
-		flightAssignment.setDraftMode(true);
 		flightAssignmentId = super.getRequest().getData("id", int.class);
 		flightAssignment = this.repository.findFlightAssignmentById(flightAssignmentId);
 
@@ -64,7 +63,7 @@ public class FlightCrewMemberAssignmentFlightPublishService extends AbstractGuiS
 	public void bind(final FlightAssignment object) {
 		assert object != null;
 
-		super.bindObject(object, "duty", "lastUpdate", "status", "remarks", "leg");
+		super.bindObject(object, "duty", "status", "remarks", "leg");
 	}
 
 	@Override
