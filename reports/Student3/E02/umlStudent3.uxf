@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.1">
-  <zoom_level>9</zoom_level>
+  <zoom_level>5</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>459</x>
-      <y>36</y>
-      <w>495</w>
-      <h>117</h>
+      <x>435</x>
+      <y>175</y>
+      <w>275</w>
+      <h>65</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 FligthAssignment
@@ -25,10 +25,10 @@ bg=GREEN
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>648</x>
-      <y>144</y>
-      <w>108</w>
-      <h>207</h>
+      <x>540</x>
+      <y>235</y>
+      <w>60</w>
+      <h>115</h>
     </coordinates>
     <panel_attributes>Component of
 lt=&lt;-x
@@ -41,10 +41,10 @@ m2=*
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>594</x>
-      <y>333</y>
-      <w>126</w>
-      <h>36</h>
+      <x>510</x>
+      <y>340</y>
+      <w>70</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Role&gt;&gt;
 FligthCrewMember
@@ -55,10 +55,10 @@ bg=YELLOW</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>441</x>
-      <y>387</y>
-      <w>603</w>
-      <h>99</h>
+      <x>425</x>
+      <y>370</y>
+      <w>335</w>
+      <h>55</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 ActivityLog
@@ -74,10 +74,10 @@ bg=GREEN</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>513</x>
-      <y>144</y>
-      <w>45</w>
-      <h>261</h>
+      <x>465</x>
+      <y>235</y>
+      <w>25</w>
+      <h>145</h>
     </coordinates>
     <panel_attributes>Has
 lt=&lt;-x
@@ -90,10 +90,10 @@ m2=1
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>837</x>
-      <y>333</y>
-      <w>126</w>
-      <h>36</h>
+      <x>645</x>
+      <y>340</y>
+      <w>70</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Airline
@@ -103,10 +103,10 @@ Airline
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>711</x>
-      <y>333</y>
-      <w>144</w>
-      <h>54</h>
+      <x>575</x>
+      <y>340</y>
+      <w>80</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>Works for &gt;
 lt=&lt;-x
@@ -119,10 +119,10 @@ m2=*
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>837</x>
-      <y>279</y>
-      <w>126</w>
-      <h>36</h>
+      <x>645</x>
+      <y>310</y>
+      <w>70</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Leg</panel_attributes>
@@ -131,10 +131,10 @@ Leg</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>873</x>
-      <y>144</y>
-      <w>108</w>
-      <h>153</h>
+      <x>665</x>
+      <y>235</y>
+      <w>60</w>
+      <h>85</h>
     </coordinates>
     <panel_attributes>Component of
 lt=&lt;-x
@@ -145,10 +145,10 @@ m2=*</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>216</x>
-      <y>522</y>
-      <w>477</w>
-      <h>135</h>
+      <x>300</x>
+      <y>445</y>
+      <w>265</w>
+      <h>75</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Role&gt;&gt;
 FligthCrewMember
@@ -166,10 +166,10 @@ bg=YELLOW</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>216</x>
-      <y>63</y>
-      <w>189</w>
-      <h>99</h>
+      <x>300</x>
+      <y>190</y>
+      <w>105</w>
+      <h>55</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Enum&gt;&gt;
 Duty
@@ -185,10 +185,10 @@ bg=CYAN</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>216</x>
-      <y>180</y>
-      <w>189</w>
-      <h>90</h>
+      <x>300</x>
+      <y>255</y>
+      <w>105</w>
+      <h>50</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Enum&gt;&gt;
 StatusAssignment
@@ -203,10 +203,10 @@ bg=CYAN</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>765</x>
-      <y>522</y>
-      <w>333</w>
-      <h>144</h>
+      <x>605</x>
+      <y>445</y>
+      <w>185</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Form&gt;&gt;
 FligthCrewMemberDashboard
@@ -225,10 +225,10 @@ bg=YELLOW</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>216</x>
-      <y>279</y>
-      <w>189</w>
-      <h>90</h>
+      <x>300</x>
+      <y>310</y>
+      <w>105</w>
+      <h>50</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Enum&gt;&gt;
 StatusCrewMember
@@ -239,5 +239,42 @@ ON_LEAVE
 
 bg=CYAN</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>805</x>
+      <y>170</y>
+      <w>275</w>
+      <h>65</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+VisaRequirements
+--
++ passportName: String {Mandatory, ValidString, Automapped}
++ destinationName: String {Mandatory, ValidString, Automapped}
++ nameCategory: String {Mandatory, ValidString, Automapped}
++ duration: Intenger {Optional, ValidInteger, Automapped}
++ lastUpdate: Date {Mandatory, ValidMoment (past=True), Temporal(TIMESTAMP)}
+
+bg=GREEN
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>705</x>
+      <y>200</y>
+      <w>105</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Has
+lt=&lt;-x
+m1=1
+m2=*
+
+</panel_attributes>
+    <additional_attributes>190.0;20.0;10.0;20.0</additional_attributes>
   </element>
 </diagram>
